@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+}
+main{
+    display: flex;
+    flex-direction: row;
+}
+.my-annotation{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    overflow-y:auto;
+}
+.img{
+    width: 400px;
+}
+.my-annotation h1{
+    padding: 1rem;
+}
+.my-annotation p{
+    padding: 0 2rem 0 2rem;
+    font-size: 1.2rem;
+}
+.center{
+    text-align: center;
+}
+.doc{
+    width: 50vw;
+    height: auto;
+    font-family: sans-serif;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+}
+@media (max-width: 1000px){
+    main{
+        flex-direction: column-reverse;
+    }
+    .my-annotation{
+        width: 100vw;
+    }
+    .doc{
+        width: 100vw;
+    }
+}
